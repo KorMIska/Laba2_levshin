@@ -251,7 +251,7 @@ namespace Laba1_levshin
                             {
                                 DrawCom.Add(new Itm(countCom, time, 0, cs[countCom].t, 1));
 
-                                sh.queueP.Insert(0, new Itm(countCom, time, cs[countCom].type, cs[countCom].t, 4));
+                                sh.queueP.Add( new Itm(countCom, time, cs[countCom].type, cs[countCom].t, 4));
 
                                 countCom++;
                                 continue;
@@ -305,7 +305,7 @@ namespace Laba1_levshin
                             // КК должен быть свободен 
                             // Иначе Должен ждать 
 
-                            if (sh.timeStop <= 0 & sh.queueP.Count == 0)
+                             if (sh.timeStop <= 0 & sh.queueP.Count == 0)
                             {
                                 if (k2.queue.Count != 0)
                                 {
